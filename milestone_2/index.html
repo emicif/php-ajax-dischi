@@ -16,16 +16,22 @@
 </head>
 <body>
     <div id="app">
-        <div class="container flex">
-            <div class="card" v-for="(item, index) in dischi" :key="index">
-                <img :src="item.poster" :alt="item.title" />
-                <h2>{{item.title}}</h2>
-                <p>{{item.author}}</p>
-                <p>{{item.year}}</p>
+        <header>
+            LOGO
+        </header>
+        <main>
+            <div class="container flex">
+                <div class="card" v-for="(item, index) in dischi" :key="index">
+                    <img :src="item.poster" :alt="item.title" />
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.author}}</p>
+                    <p>{{item.year}}</p>
+                </div>
+    
+    
             </div>
-
-
-        </div>
+        </main>
+        
     </div>
     
 </body>
