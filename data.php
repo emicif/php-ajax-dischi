@@ -1,9 +1,7 @@
-<!-- data -->
-
 
 <?php
 
-$data = [
+$dischi = [
     [
         'author' => 'Bon Jovi',
         'genre' => 'Rock',
@@ -78,7 +76,13 @@ $data = [
         'year' => "1987",
     ]
     */
-]
+    ];
 
+
+header('Content-Type: application/json');
+
+echo json_encode($dischi);
+
+header('Access-Control-Allow-Origin: *');
 
 ?>
